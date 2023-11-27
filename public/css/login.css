@@ -1,0 +1,83 @@
+.log-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.log-form div{
+    padding: 5px 0px;
+}
+
+.log-form input{
+    border: none;
+    padding: 10px;
+}
+
+.log-form button:hover{
+    background-color: rgb(22, 171, 54);
+    border-radius: 10px;
+}
+
+.log-form button{
+    color: #fff;
+    background-color: var(--celeste);
+    padding: 10px 20px;
+    border: none;
+    transition: all 0.5s;
+    border-radius: 20px;
+}
+
+main {
+    margin-top: 160px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999; 
+  }
+
+.inputGroup {
+  font-family: 'Roboto', sans-serif;
+  margin: 0.5em 0 0.5em 0;
+  max-width: 190px;
+  position: relative;
+}
+
+.inputGroup input {
+  font-size: 100%;
+  padding: 0.8em;
+  outline: none;
+  border: 2px solid rgb(200, 200, 200);
+  background-color: transparent;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.inputGroup label {
+  font-size: 100%;
+  position: absolute;
+  left: 0;
+  padding: 0.8em;
+  margin-left: 0.5em;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  color: rgb(127, 127, 127);
+}
+
+.inputGroup :is(input:focus, input:valid)~label {
+  transform: translateY(-50%) scale(.9);
+  margin: 0em;
+  margin-left: 1.3em;
+  padding: 0.4em;
+  background-color: #e8e8e8;
+}
+
+.inputGroup :is(input:focus, input:valid) {
+  border-color: rgb(230, 195, 0)
+}

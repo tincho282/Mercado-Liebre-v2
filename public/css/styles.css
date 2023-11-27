@@ -1,0 +1,407 @@
+
+@import "login.css";
+
+@import "register.css";
+
+:root{
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--gris-claro);
+}
+
+header {
+    background-color: var(--amarillo);
+    padding: 20px;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+
+}
+
+.main-header{
+    background-color: var(--amarillo);
+    padding: 10px;
+}
+
+.main-header-top-bar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 50%;
+    padding: 10px 0;
+    margin: 0 auto; 
+  }
+
+.buscar{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    padding: 5px;
+    position: relative;
+}
+
+.input{
+    background-color: #FFF;
+    border: 1px solid var(--gris-oscuro);
+    color: var(--gris-oscuro);
+    padding: 5px;
+    outline: none;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.icono-buscador{
+    background-color: #FFF;
+    border-left: 2px solid black;
+    color: var(--gris-oscuro);
+    font-weight: bold;
+    padding-left: 3px;
+    position: absolute;
+    right: 10px;
+}
+
+.texto-header{
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 0px;
+}
+
+.burger-menu{
+    text-align: center;
+}
+
+.burger-menu i{
+    background-color: var(--celeste);
+    color: #fff;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.main-navbar{
+    display: none;
+}
+
+.main-navbar ul{
+    list-style-type: none;
+    text-decoration: none;
+    color: #000;
+}
+
+.main-navbar a{
+    text-decoration: none;
+    color: #000;
+}
+
+main section{
+    text-align: center;
+    margin: auto;
+    width: 90vw;
+}
+
+.banner-main{
+    width: 100%;
+}
+
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+article{
+    margin-bottom: 10px;
+    background-color: #fff;
+    width: 80%;
+}
+
+article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+article img{
+    width: 100%;
+}
+
+.imagen-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip {
+    visibility: hidden;
+    background-color: rgba(255, 242, 0, 0.083); 
+    color: white;
+    text-align: center;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.891);
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 5px;
+    position: absolute;
+    z-index: 2; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+  }
+  
+  .imagen-container:hover .tooltip {
+    visibility: visible;
+  }
+  
+  
+
+.productos-caja{
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    align-items: center;
+}
+
+.productos-caja i{
+    display: flex;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    color: var(--verde);
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-truck{
+    transition: all 1s;
+}
+
+article:hover .fa-truck{
+    rotate: -90deg;
+}
+
+.titulares{
+    font-size: 20px;
+    padding: 5px;
+    margin: 5px;
+    border-bottom: rgb(255, 255, 255) solid 3px;
+    border-top: rgb(255, 255, 255) solid 3px;;
+}
+
+.precios{
+    font-size: 18px;
+    width: 30%;
+    text-align: left;
+}
+
+.descuentos{
+    font-size: 14px;
+    width: 70%;
+    color: var(--verde);
+    text-align: right;
+}
+
+.descripciones{
+    font-size: 16px;
+    display: none;
+}
+
+article:hover .descripciones{
+    display: block;
+}
+
+.tarjeta{
+    padding-top: 30px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.tarjeta i{
+    font-size: 2em;
+    margin: 10px;
+    color: var(--celeste);
+}
+
+.envio{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.envio i{
+    font-size: 2em;
+    margin: 10px;
+    color: var(--celeste);
+}
+
+.seguridad{
+    padding-top: 15px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.seguridad i{
+    font-size: 2em;
+    margin: 10px;
+    color: var(--celeste);
+}
+
+.copy{
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.main-footer section i{
+    transition: all 0.3s;
+}
+
+.main-footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+    font-size: 0.7em;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: all 0.3s ease;
+  }
+
+.main-footer section i:hover{
+    color: rgb(38, 218, 32);
+    transform: scale(1.2);
+}
+
+.centered-text {
+    font-weight: 600;
+    font-size: 0.8em;
+}
+
+@media (min-width: 361px) {
+    .main-header-top-bar{
+        justify-content: space-around;
+    }
+
+    .input{
+        font-size: 9px;
+    }
+
+    .logo{
+        width: 25%;
+    }
+
+    .buscador{
+        width: 35%;
+    }
+
+    .texto-header{
+        width: 37%;
+        font-size: 8px;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    .main-navbar{
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+    }
+
+    .productos{
+        justify-content: space-around;
+    }
+
+    article{
+        width: 45%;
+    }
+    .main-footer {
+        font-size: 0.9em;
+
+      }
+
+}
+
+@media (min-width: 769px) {
+    .main-header-top-bar{
+        justify-content: space-between;
+    }
+
+    .texto-header{
+        width: 37%;
+        font-size: 12px;
+    }
+    
+    .main-navbar ul{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-navbar li{
+        display: flex;
+        margin: 0px 5px;
+    }
+
+    .productos{
+        justify-content: space-between;
+    }
+
+    article{
+        width: 20%;
+    }
+
+    .main-footer {
+        display: flex;
+        justify-content: center; 
+        flex-wrap: wrap;
+      }
+
+    .main-footer section{
+        width: 30%;
+    }
+
+    .copy{
+        padding-top: 15px;
+    }
+
+    .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        grid-gap: 20px; 
+        max-width: 900px; 
+        margin: 0 auto;
+      }
+      .container {
+        grid-column: 1 / 4; 
+        text-align: center;
+      }
+    }
